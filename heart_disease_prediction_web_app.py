@@ -4,7 +4,7 @@ import pickle
 import streamlit as st
 
 # Load the saved model
-loaded_model = pickle.load(open(r'D:\ML\trained_model_heart_disease.sav', 'rb'))
+loaded_model = pickle.load(open('D:\ML\trained_model_heart_disease.sav', 'rb'))
 
 # Prediction function
 def heart_disease_prediction(input_data):
@@ -48,3 +48,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
